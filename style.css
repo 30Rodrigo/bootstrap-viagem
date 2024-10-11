@@ -1,0 +1,221 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+}
+
+/* Estilizando o menu */
+.navbar {
+    background-color: #02162a; /* Cor de fundo da navbar */
+    padding: 10px 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.navbar .navbar-brand {
+    color: #dfbbf2; /* Cor do texto do título */
+}
+
+.navbar .nav-link {
+    color: #dfbbf2; /* Cor do texto dos links */
+}
+
+.navbar .nav-link:hover {
+    color: #5183b5; /* Cor do texto ao passar o mouse */
+}
+
+.navbar-toggler {
+    border-color: #f0ecec; /* Cor da borda do botão de toggle */
+}
+
+.navbar-toggler-icon {
+    background-color: #f0ecec; /* Cor do ícone do botão de toggle */
+}
+
+
+/* Estilizando as abas */
+.nav-tabs {
+    border-bottom: 2px solid #02162a; /* Cor da borda inferior das abas */
+}
+
+.nav-tabs .nav-link {
+    color: #dfbbf2; /* Cor do texto das abas */
+    border: none; /* Remove a borda padrão das abas */
+    margin-right: 15px; /* Espaçamento entre as abas */
+}
+
+.nav-tabs .nav-link:hover {
+    color: #5183b5; /* Cor do texto ao passar o mouse */
+}
+
+.nav-tabs .nav-link.active {
+    color: #f0ecec; /* Cor do texto da aba ativa */
+    background-color: #02162a; /* Cor de fundo da aba ativa */
+    border-bottom: 2px solid #f0ecec; /* Borda inferior da aba ativa */
+}
+
+/* Estilizando o carrossel */
+.carousel-item {
+    height: 400px; /* Definindo uma altura fixa para o carrossel */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Faz com que a imagem cubra todo o espaço do carrossel */
+    height: 100%; /* Faz com que a imagem ocupe toda a altura do item do carrossel */
+}
+
+.carousel-caption {
+    background-color: rgba(2, 22, 42, 0.7); /* Fundo escuro com transparência para a legenda */
+    color: #dfbbf2; /* Cor do texto da legenda */
+    padding: 15px; /* Espaçamento interno da legenda */
+    border-radius: 5px; /* Arredondar os cantos do fundo da legenda */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #02162a; /* Cor de fundo dos ícones de controle */
+    border-radius: 50%; /* Tornar os ícones circulares */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%); /* Inverte a cor dos ícones para que fiquem visíveis */
+}
+
+/* Estilizando a seção Destinos */
+.destinos {
+    background-color: #f8f9fa; /* Cor de fundo da seção */
+    padding: 40px 0; /* Espaçamento interno da seção */
+}
+
+.destinos h2 {
+    color: #02162a; /* Cor do título */
+    margin-bottom: 30px; /* Margem inferior para espaçamento */
+}
+
+.card {
+    border: none; /* Remover borda padrão do card */
+    border-radius: 10px; /* Bordas arredondadas para os cards */
+    transition: transform 0.3s; /* Efeito de transição suave ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Arredondar apenas a parte superior da imagem */
+}
+
+.card-title {
+    color: #02162a; /* Cor do título do card */
+}
+
+.card-text {
+    color: #555; /* Cor do texto da descrição do card */
+}
+
+.btn-primary {
+    background-color: #02162a; /* Cor do botão */
+    border-color: #02162a; /* Cor da borda do botão */
+}
+
+.btn-primary:hover {
+    background-color: #dfbbf2; /* Cor do botão ao passar o mouse */
+    color: #02162a; /* Cor do texto do botão ao passar o mouse */
+}
+
+.pacotes .card {
+    border: 1px solid #dfbbf2; /* Borda das caixas */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo branca para as caixas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeitos ao passar o mouse */
+}
+
+.pacotes .card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+.pacotes .card-title {
+    color: #02162a; /* Cor do título */
+    font-weight: bold; /* Título em negrito */
+}
+
+.pacotes .btn-primary {
+    background-color: #02162a; /* Cor do botão */
+    border-color: #02162a; /* Cor da borda do botão */
+    transition: background-color 0.3s; /* Transição suave para o botão */
+}
+
+.pacotes .btn-primary:hover {
+    background-color: #dfbbf2; /* Cor do botão ao passar o mouse */
+    border-color: #dfbbf2; /* Cor da borda do botão ao passar o mouse */
+}
+
+.contato {
+    background-color: #f9f9f9; /* Cor de fundo clara para a seção */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.form-container {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.contato .form-label {
+    color: #02162a; /* Cor das labels */
+}
+
+.contato .form-control {
+    border: 1px solid #dfbbf2; /* Borda das caixas de texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.contato .form-control:focus {
+    border-color: #5183b5; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(81, 131, 181, 0.5); /* Sombra ao focar */
+}
+
+.contato .btn-primary {
+    background-color: #02162a; /* Cor do botão */
+    border-color: #02162a; /* Cor da borda do botão */
+    transition: background-color 0.3s; /* Transição suave para o botão */
+}
+
+.contato .btn-primary:hover {
+    background-color: #dfbbf2; /* Cor do botão ao passar o mouse */
+    border-color: #dfbbf2; /* Cor da borda do botão ao passar o mouse */
+}
+
+
+.footer {
+    background-color: #02162a; /* Cor de fundo do rodapé */
+    color: #dfbbf2; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.footer .footer-link {
+    color: #dfbbf2; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.footer .footer-link:hover {
+    color: #5183b5; /* Cor dos links ao passar o mouse */
+}
+
+.footer ul {
+    padding: 0; /* Remove o padding da lista */
+}
+
+.footer li {
+    display: inline; /* Faz os itens da lista serem exibidos em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
